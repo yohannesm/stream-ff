@@ -2,6 +2,7 @@ package marcell.streamff
 
 import cats.effect.{ExitCode, IO, IOApp}
 import cats.implicits._
+import io.circe.fs2._
 
 object Main extends IOApp {
   //def run(args: List[String]) =

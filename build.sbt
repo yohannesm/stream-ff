@@ -11,6 +11,7 @@ lazy val root = (project in file("."))
     scalaVersion := "2.12.8",
     scalacOptions ++= Seq("-Ypartial-unification"),
     libraryDependencies ++= Seq(
+      "io.circe"        %% "circe-fs2"           % "0.8.0",
       "org.http4s"      %% "http4s-blaze-server" % Http4sVersion,
       "org.http4s"      %% "http4s-blaze-client" % Http4sVersion,
       "org.http4s"      %% "http4s-circe"        % Http4sVersion,
