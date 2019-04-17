@@ -15,6 +15,6 @@
 			"roomId": 4,
 			"operatorId": 5
 		},
-		"event": "servicerequest"
+		"event": "deleted"
 	}
 ]
