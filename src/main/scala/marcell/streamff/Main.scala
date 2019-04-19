@@ -20,11 +20,12 @@ object Main extends IOApp {
     implicit val cpEncoder = deriveEncoder[CustomerPref]
 
     val customerJsonPref = Source.fromFile("CustomerPref.json").getLines.mkString
+
     //println(customerJsonPref)
 
     val customerPrefs = parse(customerJsonPref).map(_.as[List[CustomerPref]]) match {
       case Left(failure) => {
-        println($"failure in parsing with $failure")
+        println(s"failure in parsing with $failure")
         List.empty[CustomerPref]
       }
       case Right(x) => x.getOrElse(List.empty)
