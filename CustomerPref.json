@@ -1,19 +1,19 @@
 [
 {
 "appCode": "Mcdonalds", "webhookSettings" : [
-{"entity": "RESERVATIONS", "event": "CREATED", "endpoint":  "http://httpbin.org/mcdonalds/res/created"},
-{"entity": "RESERVATIONS", "event": "DELETED", "endpoint":  "http://httpbin.org/mcdonalds/res/deleted"},
-{"entity": "SERVICEREQUEST", "event": "DELETED", "endpoint":  "http://httpbin.org/mcdonalds/sr/deleted"}
+{"entity": "RESERVATIONS", "event": "CREATED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "RESERVATIONS", "event": "DELETED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "SERVICEREQUEST", "event": "DELETED", "endpoint":  "http://httpbin.org/post"}
 ]
 },
 {
 "appCode": "BurgerKing", "webhookSettings" : [
-{"entity": "RESERVATIONS", "event": "CREATED", "endpoint":  "http://httpbin.org/mcdonalds/res/created"},
-{"entity": "RESERVATIONS", "event": "UPDATED", "endpoint":  "http://httpbin.org/mcdonalds/res/updated"},
-{"entity": "RESERVATIONS", "event": "DELETED", "endpoint":  "http://httpbin.org/mcdonalds/res/deleted"},
-{"entity": "SERVICEREQUEST", "event": "CREATED", "endpoint":  "http://httpbin.org/bk/sr/create"},
-{"entity": "SERVICEREQUEST", "event": "UPDATED", "endpoint":  "http://httpbin.org/bk/sr/updated"},
-{"entity": "SERVICEREQUEST", "event": "DELETED", "endpoint":  "http://httpbin.org/bk/sr/deleted"}
+{"entity": "RESERVATIONS", "event": "CREATED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "RESERVATIONS", "event": "UPDATED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "RESERVATIONS", "event": "DELETED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "SERVICEREQUEST", "event": "CREATED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "SERVICEREQUEST", "event": "UPDATED", "endpoint":  "http://httpbin.org/post"},
+{"entity": "SERVICEREQUEST", "event": "DELETED", "endpoint":  "http://httpbin.org/post"}
 ]
 }
 ]
