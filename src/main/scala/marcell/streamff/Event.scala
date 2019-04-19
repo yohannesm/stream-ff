@@ -1,7 +1,9 @@
 package marcell.streamff
 
-case class Reservation(id: Long, userId: Long, start: String, end: String)
+sealed trait Entity
 
-case class ServiceRequest(id: Long, roomId: Long, operatorId: Long)
+case class Reservation(id: Long, userId: Long, start: String, end: String) extends Entity
 
-case class Event(appCode: String, entity: Either[Reservation, ServiceRequest], event: String)
+case class ServiceRequest(id: Long, roomId: Long, operatorId: Long) extends Entity
+
+case class Event(appCode: String, entity: Entity, event: String)
