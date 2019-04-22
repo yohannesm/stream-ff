@@ -31,6 +31,9 @@ object Main extends IOApp {
       case Right(x) => x.getOrElse(List.empty)
     }
 
+    val uriMap = UriResolver.UriMapBuilder(customerPrefs)
+    for ((k,v) <- uriMap) printf("key: %s, value: %s\n", k, v)
+
     //println(customerPrefs)
 
 
